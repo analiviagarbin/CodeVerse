@@ -1,5 +1,5 @@
 DB_USER=root
 DB_PASSWORD=
-DB_NAME=devbook
+DB_NAME=codeverse
 
 API_PORT=5000
