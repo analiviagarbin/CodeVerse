@@ -27,6 +27,7 @@ func CreateUser(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer db.Close()
 
 	// The repository is open, it receives the database
 	repository := repositories.NewUserRepository(db)
